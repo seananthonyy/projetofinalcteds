@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\
+=======
+C:\Users\Thiago\Source\Repos\projetofinalcteds\obj\Debug\
+>>>>>>> 1b8fd3d457dec93f3d87c02d686986ad998bc112
 WPFteste
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\App.xaml
 21434237875
 
 6-512663973
 14-1754596450
+=======
+C:\Users\Thiago\Source\Repos\projetofinalcteds\App.xaml
+21434237875
+
+6-512663973
+14786872581
+>>>>>>> 1b8fd3d457dec93f3d87c02d686986ad998bc112
 JanelaMenu.xaml;MainWindow.xaml;
 
 False
