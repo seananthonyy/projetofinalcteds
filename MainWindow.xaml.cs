@@ -29,7 +29,32 @@ namespace WPFteste
         
 private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            SqlConnection conexaosql = new SqlConnection("");
+            SqlConnection conexaosql = new SqlConnection("Server=labsoft.pcs.usp.br; Initial Catalog=db_25; User id=usuario_25; pwd=61266348379;");
+
+            try
+            {
+                if (conexaosql.State == System.Data.ConnectionState.Closed)
+                    conexaosql.Open();
+                string pesquisa = "SELECT COUNT (1) FROM TabelaJogoCteds WHERE userName=@usuario AND userPassword=@senha";
+                SqlCommand sqlCmd = new SqlCommand(pesquisa, conexaosql);
+                sqlCmd.CommandType = System.Data.CommandType.Text; //talvez n seja isso
+                sqlCmd.Parameters.AddWithValue("@usuario", TextBox_Usuario.Text);
+                sqlCmd.Parameters.AddWithValue("@senha", TextBox_Senha.Text);
+
+                int x = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (x == 1)
+                    MessageBox.Show("autorizado");
+                else
+                    MessageBox.Show("nao autorizado");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }finally
+            {
+                conexaosql.Close();
+            }
         }
 
         private void TextBox_Senha_TextChanged(object sender, TextChangedEventArgs e)
