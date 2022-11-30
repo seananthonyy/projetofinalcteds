@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFteste"
         mc:Ignorable="d"
-        Title="JanelaMenu" Height="1024" Width="1440">
-    <Grid>
+        Title="JanelaMenu"
+        WindowStartupLocation="CenterScreen" Height="768" Width="1366">
 
-    </Grid>
+    <Border>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                <GradientStop Color="Black"/>
+            </LinearGradientBrush>
+            
+        </Border.Background>
+
+
+        <Border>
+            <Border.Background>
+                <ImageBrush ImageSource="/background.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+        </Border>
+    </Border>
+    
+    
 </Window>
