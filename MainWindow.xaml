@@ -124,7 +124,7 @@
      />
             </Label.Effect>
         </Label>
-        <Label x:Name="blablabla_Copy3" Style="{StaticResource AdobeHebrew}" Content="Não tenho uma conta" HorizontalAlignment="Left" Margin="569,589,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="43" Width="244"/>
+        <Button Style="{StaticResource AdobeHebrew}" Content="Não tenho uma conta" Click="Button_Click_2" HorizontalAlignment="Left" Margin="569,589,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="43" Width="244"/>
 
     </Grid>
 
