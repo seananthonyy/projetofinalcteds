@@ -37,7 +37,7 @@ private void Button_Click_1(object sender, RoutedEventArgs e)
                     conexaosql.Open();
                 string pesquisa = "SELECT COUNT (1) FROM TabelaJogoCteds WHERE userName=@usuario AND userPassword=@senha";
                 SqlCommand sqlCmd = new SqlCommand(pesquisa, conexaosql);
-                sqlCmd.CommandType = System.Data.CommandType.Text; //talvez n seja isso
+                sqlCmd.CommandType = System.Data.CommandType.Text;
                 sqlCmd.Parameters.AddWithValue("@usuario", TextBox_Usuario.Text);
                 sqlCmd.Parameters.AddWithValue("@senha", TextBox_Senha.Text);
 
