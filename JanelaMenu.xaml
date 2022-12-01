@@ -13,16 +13,32 @@
             <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
                 <GradientStop Color="Black"/>
             </LinearGradientBrush>
-            
+
         </Border.Background>
 
-
         <Border>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="128"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Rectangle Height="128" Margin="0,-0,0,0" VerticalAlignment="Top" Fill="Black" Opacity="0.8"/>
+                <Image Margin="623,10,623,10" Source="/logo.png" />
+                <Button Content="Personagens" HorizontalAlignment="Left" Margin="291,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
+                <Button Content="Mapa" HorizontalAlignment="Left" Margin="98,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
+                <Button Content="Regras"  Margin="873,31,331,31"  Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
+                <Button Content="Opções"  Margin="1136,31,62,31" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
+
+            </Grid>
+
             <Border.Background>
                 <ImageBrush ImageSource="/background.jpg" Stretch="UniformToFill"/>
             </Border.Background>
         </Border>
     </Border>
-    
-    
+
+
+
 </Window>
