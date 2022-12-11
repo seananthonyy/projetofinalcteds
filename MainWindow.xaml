@@ -85,8 +85,8 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <Label x:Name="blablabla" Style="{StaticResource AdobeHebrew}" Content="USUÁRIO" HorizontalAlignment="Left" Margin="569,315,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="28" Width="81"/>
-        <Label x:Name="blablabla_Copy" Style="{StaticResource AdobeHebrew}" Content="SENHA" HorizontalAlignment="Left" Margin="569,413,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="28" Width="63"/>
+        <Label x:Name="TextoUsuario" Style="{StaticResource AdobeHebrew}" Content="USUÁRIO" HorizontalAlignment="Left" Margin="569,315,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="28" Width="81"/>
+        <Label x:Name="TextoSenha" Style="{StaticResource AdobeHebrew}" Content="SENHA" HorizontalAlignment="Left" Margin="569,413,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="28" Width="63"/>
         <Button Content="Login" Click="Button_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="68" Width="242" Background="#FFE8E5E5" FontFamily="Adobe Hebrew" FontSize="32" BorderBrush="Black" BorderThickness="5,5,5,5" Margin="569,516,0,0">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -113,7 +113,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label x:Name="blablabla_Copy2" Style="{StaticResource AdobeHebrew}" Content="Faça Login" HorizontalAlignment="Left" Margin="569,234,0,0" VerticalAlignment="Top" FontSize="52" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="76" Width="264" IsEnabled="False">
+        <Label x:Name="TextoLogin" Style="{StaticResource AdobeHebrew}" Content="Faça Login" HorizontalAlignment="Left" Margin="569,234,0,0" VerticalAlignment="Top" FontSize="52" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="76" Width="264" IsEnabled="False">
             <Label.Effect>
                 <DropShadowEffect
       ShadowDepth="1"
@@ -124,7 +124,7 @@
      />
             </Label.Effect>
         </Label>
-        <Button Style="{StaticResource AdobeHebrew}" Content="Não tenho uma conta" Click="Button_Click_2" HorizontalAlignment="Left" Margin="569,589,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="43" Width="244"/>
+        <Button Style="{StaticResource AdobeHebrew}" Content="Não tenho uma conta" Click="Button_Click_2" HorizontalAlignment="Left" Margin="569,589,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="Adobe Hebrew" Foreground="#FF443737" Height="43" Width="244" Background="{x:Null}" BorderBrush="{x:Null}" />
 
     </Grid>
 
