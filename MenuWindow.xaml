@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFteste"
         mc:Ignorable="d"
-        Title="JanelaMenu"
+        Title="MenuWindow"
         WindowStartupLocation="CenterScreen" Height="768" Width="1366">
 
     <Border>
@@ -25,11 +25,102 @@
                 </Grid.RowDefinitions>
                 <Rectangle Height="128" Margin="0,-0,0,0" VerticalAlignment="Top" Fill="Black" Opacity="0.8"/>
                 <Image Margin="623,10,623,10" Source="/logo.png" />
-                <Button Content="Personagens" HorizontalAlignment="Left" Margin="291,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
-                <Button Content="Mapa" HorizontalAlignment="Left" Margin="98,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
-                <Button Content="Regras"  Margin="873,31,331,31"  Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
-                <Button Content="Opções"  Margin="1136,31,62,31" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click"/>
-
+                <Button Content="Personagens" HorizontalAlignment="Left" Margin="291,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="TextBlock.Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="Mapa" HorizontalAlignment="Left" Margin="98,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="TextBlock.Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="Regras"  Margin="871,31,333,31"  Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="TextBlock.Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="Opções"  Margin="1144,31,54,31" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="TextBlock.Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
             </Grid>
 
             <Border.Background>
