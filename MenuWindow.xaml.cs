@@ -26,12 +26,22 @@ namespace WPFteste
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            RetanguloLista.Visibility = Visibility.Hidden;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Click_Personagens(object sender, RoutedEventArgs e)
         {
-
+            if(RetanguloLista.Visibility == Visibility.Hidden)
+            {
+                RetanguloLista.Visibility = Visibility.Visible;
+                ListaPersonagens.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                RetanguloLista.Visibility = Visibility.Hidden;
+                ListaPersonagens.Visibility = Visibility.Hidden;
+            }
+            
         }
     }
 }

@@ -29,7 +29,7 @@
 
                 <Rectangle Height="128" Margin="0,-0,0,0" VerticalAlignment="Top" Fill="Black" Opacity="0.8" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
                 <Image Margin="623,10,623,10" Source="/logo.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-                <Button Content="Personagens" HorizontalAlignment="Left" Margin="291,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button Content="Personagens" HorizontalAlignment="Left" Margin="291,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Click_Personagens" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Template">
@@ -53,7 +53,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="Mapa" HorizontalAlignment="Left" Margin="98,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click">
+                <Button Name="BotaoMapa" Content="Mapa" HorizontalAlignment="Left" Margin="98,0,0,0" VerticalAlignment="Center" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Template">
@@ -125,11 +125,12 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Rectangle Width="353" VerticalAlignment="Stretch" Stretch="UniformToFill"  Fill="Black"  Grid.Row="1"/>
+                <Rectangle Visibility="Hidden" Name="RetanguloLista" Width="353" VerticalAlignment="Stretch" Stretch="UniformToFill"  Fill="Black"  Grid.Row="1"/>
 
-                <ListView Name="ListaPersonagens" Grid.Column="0" Grid.Row="1" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}"
+                <Rectangle Name="RetanguloOpcoes" Stretch="UniformToFill"  Fill="Black" Grid.Column="1" Margin="192,53,544,53" Grid.Row="1"/>
+
+                <ListView Visibility="Hidden" Name="ListaPersonagens" Grid.Column="0" Grid.Row="1" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}"
                               ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Margin="0,0,0,0">
-
                 </ListView>
             </Grid>
 
