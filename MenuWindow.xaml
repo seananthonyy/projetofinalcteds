@@ -101,7 +101,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="Opções"  Margin="1144,31,54,31" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Button_Click" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button Content="Conta"  Margin="1144,31,54,31" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="50" Click="Click_Conta" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Setter Property="Template">
@@ -125,13 +125,45 @@
                         </Style>
                     </Button.Style>
                 </Button>
+                
                 <Rectangle Visibility="Hidden" Name="RetanguloLista" Width="353" VerticalAlignment="Stretch" Stretch="UniformToFill"  Fill="Black"  Grid.Row="1"/>
-
-                <Rectangle Name="RetanguloOpcoes" Stretch="UniformToFill"  Fill="Black" Grid.Column="1" Margin="192,53,544,53" Grid.Row="1"/>
-
                 <ListView Visibility="Hidden" Name="ListaPersonagens" Grid.Column="0" Grid.Row="1" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}"
                               ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom" Margin="0,0,0,0">
                 </ListView>
+
+                <Rectangle Visibility="Hidden" RadiusX="30" RadiusY="30" Stroke="#FFFF2929" StrokeThickness="2" Name="RetanguloOpcoes"
+                           Fill="Black" Grid.Column="1" Grid.Row="1" Margin="163,72,516,376"/>
+                <TextBlock Visibility="Hidden" x:Name="TextoOpcoes"   Margin="270,89,623,0" TextWrapping="Wrap"
+                           Text="Conta" VerticalAlignment="Top" Foreground="White" FontSize="42" FontFamily="Adobe Hebrew" Grid.Column="1" Grid.Row="1" Width="120" >
+                    <TextBlock.Effect>
+                        <DropShadowEffect  BlurRadius="20" ShadowDepth="1" Color="Red"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <Button Visibility="Hidden" Name="BotaoTrocaConta" Content="Trocar de Conta"  Margin="193,164,546,393"  Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="38" Click="Click_TrocaDeConta" Grid.Row="1" Grid.Column="1">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
             </Grid>
 
             <Border.Background>

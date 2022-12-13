@@ -43,5 +43,27 @@ namespace WPFteste
             }
             
         }
+        private void Click_Conta(object sender, RoutedEventArgs e)
+        {
+            if(RetanguloOpcoes.Visibility == Visibility.Hidden)
+            {
+                RetanguloOpcoes.Visibility = Visibility.Visible;
+                TextoOpcoes.Visibility = Visibility.Visible;
+                BotaoTrocaConta.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                RetanguloOpcoes.Visibility = Visibility.Hidden;
+                TextoOpcoes.Visibility = Visibility.Hidden;
+                BotaoTrocaConta.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void Click_TrocaDeConta(object sender, RoutedEventArgs e)
+        {
+            MainWindow JanelaPrincipal = new MainWindow();
+            JanelaPrincipal.Show();
+            this.Close();
+        }
     }
 }
