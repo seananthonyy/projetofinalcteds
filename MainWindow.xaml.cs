@@ -29,13 +29,13 @@ namespace WPFteste
         
 private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            SqlConnection conexaosql = new SqlConnection("Server=labsoft.pcs.usp.br; Initial Catalog=db_25; User id=usuario_25; pwd=61266348379;");
+            SqlConnection conexaosql = new SqlConnection("Server=serverdefinitivo.database.windows.net; Initial Catalog=dbdefinitiva; User id=thiagoantonio; pwd=12677679ta!;");
 
             try
             {
                 if (conexaosql.State == System.Data.ConnectionState.Closed)
                     conexaosql.Open();
-                string pesquisa = "SELECT COUNT (1) FROM TabelaJogoCteds WHERE userName=@usuario AND userPassword=@senha";
+                string pesquisa = "SELECT COUNT (1) FROM Usuarios WHERE UsuarioNome=@usuario AND UsuarioSenha=@senha";
                 SqlCommand sqlCmd = new SqlCommand(pesquisa, conexaosql);
                 sqlCmd.CommandType = System.Data.CommandType.Text;
                 sqlCmd.Parameters.AddWithValue("@usuario", TextBox_Usuario.Text);

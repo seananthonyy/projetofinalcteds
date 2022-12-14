@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFteste.Models;
+using WPFteste.Interfaces;
+using WPFteste.Repositories;
 
 namespace WPFteste
 {
@@ -26,11 +29,17 @@ namespace WPFteste
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            UsuariosRepository _usuarios = new UsuariosRepository();
+            Usuarios usuario = new Usuarios();
 
-        }
+            usuario.Nome = Textbox_user.Text;
+            usuario.Senha = Textbox_senha.Text;
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
+            _usuarios.CriarUsuario(usuario);
+
+            this.Close();
+               
+
 
         }
 

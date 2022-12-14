@@ -16,10 +16,10 @@
         </Border.Background>
         <Grid>
             <Label Content="Usuário" HorizontalAlignment="Left" Margin="30,57,0,0" VerticalAlignment="Top" Width="77" FontSize="20" Foreground="White" FontFamily="Adobe Hebrew"/>
-            <TextBox HorizontalAlignment="Left" Margin="30,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="38" FontSize="20"/>
+            <TextBox x:Name="Textbox_user" HorizontalAlignment="Left" Margin="30,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="38" FontSize="20"/>
             <Label Content="Senha" HorizontalAlignment="Left" Margin="30,168,0,0" VerticalAlignment="Top" Width="64" FontSize="20" Foreground="White"/>
-            <TextBox HorizontalAlignment="Left" Margin="30,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="38" FontSize="20" TextChanged="TextBox_TextChanged"/>
-            <Button Content="Registrar" Click="Button_Click_1" Margin="30,341,30,37" FontSize="20"/>
+            <TextBox x:Name="Textbox_senha" HorizontalAlignment="Left" Margin="30,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="38" FontSize="20" TextChanged="TextBox_TextChanged"/>
+            <Button Content="Registrar" Click="Button_Click" Margin="30,341,30,37" FontSize="20"/>
         </Grid>
     </Border>
 </Window>
