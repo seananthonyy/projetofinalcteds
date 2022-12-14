@@ -5,8 +5,325 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFteste"
         mc:Ignorable="d"
-        Title="MapWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MapWindow" Height="768" Width="1366" WindowStartupLocation="CenterScreen">
+
+    <Border>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                <GradientStop Color="Black"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Border>
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Fill"  Name="RetanguloFuncoes" Fill="Black" Opacity="0.8" Grid.Column="0" Margin="0,1,3,2"  Grid.Row="2"/>
+                <ListView   Name="ListaRegras" Grid.Column="0" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}"
+                              ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                           VerticalContentAlignment="Stretch" Grid.Row="2" Margin="0,1,152,0" Grid.ColumnSpan="2" >
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                    <Setter Property="BorderBrush" Value="Transparent"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                                <ContentPresenter />
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                    <Button Name="Botao_D100" Content="D100" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d100" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Name="Botao_D20" Content="D20" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d20" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Name="Botao_D12" Content="D12" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d12" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Name="Botao_D10" Content="D10" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d10" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Name="Botao_D8" Content="D8" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d8" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Name="Botao_D6" Content="D6" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d6" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Name="Botao_D4" Content="D4" Margin="0,0,0,0" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="26" Click="Botao_d4" Width="138">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="TextBlock.Effect">
+                                                        <Setter.Value>
+                                                            <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
+
+                </ListView>
+                <Image Margin="0,122,10,125" Grid.RowSpan="5" Source="/mapa.png" Stretch="Fill" Grid.Column="2"/>
+                <Rectangle VerticalAlignment="Center"  Name="RetanguloBotoes" Fill="Black" Opacity="0.8" Grid.Column="2" Height="126"/>
+                <Image HorizontalAlignment="Left" Margin="0,12,0,11" Source="/logo.png" Grid.Row="0" Grid.Column="2" />
+
+                <Canvas x:Name="canvas"
+            MouseLeftButtonDown="CanvasMouseLeftButtonDown"
+            MouseLeftButtonUp="CanvasMouseLeftButtonUp"
+            MouseMove="CanvasMouseMove" Grid.ColumnSpan="2" Margin="0,0,152,0"/>
+                <Button Name="Botao_AddPersonagem" Grid.Column="2" Grid.Row="0" Content="+ Personagem" Margin="197,21,501,19" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="60" Click="AddButtonClick">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="TextBlock.Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="Botao_AddMapa" Grid.Column="2" Grid.Row="0" Content="+ Mapa" Margin="611,21,241,19" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="60" Click="Botao_AddMapa_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="BotaVoltar" Grid.Column="2" Grid.Row="0" Content="Voltar" Margin="856,21,-3,19" Background="{x:Null}" Foreground="#FFF6F6F6" BorderBrush="{x:Null}" FontFamily="Adobe Hebrew" FontSize="60" Click="Botao_Voltar">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Effect">
+                                                    <Setter.Value>
+                                                        <DropShadowEffect ShadowDepth="1" Color="Red" Opacity="1" BlurRadius="35" RenderingBias="Quality" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+                <TextBlock HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap"
+                           Text="Dados" VerticalAlignment="Top" FontFamily="Adobe Hebrew" Foreground="White"
+                           Height="54" Width="136" FontSize="50" Margin="0,32,0,0">
+                    <TextBlock.Effect>
+                        <DropShadowEffect  BlurRadius="20" ShadowDepth="1" Color="Red"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+
+
+            </Grid>
+
+            <Border.Background>
+                <ImageBrush ImageSource="/background.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+        </Border>
+    </Border>
 </Window>
+

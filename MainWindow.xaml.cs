@@ -44,7 +44,6 @@ private void Button_Click_1(object sender, RoutedEventArgs e)
                 int x = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 if (x == 1)
                 {
-                    MessageBox.Show("autorizado");
                     JanelaMenu janela = new JanelaMenu();
                     janela.Show();
                     this.Close();

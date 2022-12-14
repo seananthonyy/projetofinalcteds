@@ -24,9 +24,18 @@ namespace WPFteste
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Abrir_ficha(object sender, RoutedEventArgs e)
         {
-            RetanguloLista.Visibility = Visibility.Hidden;
+            FichaWindow JanelaFicha = new FichaWindow();
+            JanelaFicha.Show();
+           
+        }
+
+        private void Click_Mapa(object sender, RoutedEventArgs e)
+        {
+            MapWindow JanelaMapa = new MapWindow();
+            JanelaMapa.Show();
+            this.Close();
         }
 
         private void Click_Personagens(object sender, RoutedEventArgs e)
@@ -34,7 +43,7 @@ namespace WPFteste
             if(RetanguloLista.Visibility == Visibility.Hidden)
             {
                 RetanguloLista.Visibility = Visibility.Visible;
-                ListaPersonagens.Visibility = Visibility.Visible;
+                ListaPersonagens.Visibility = Visibility.Visible; 
             }
             else
             {
