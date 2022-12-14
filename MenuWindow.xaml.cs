@@ -65,5 +65,38 @@ namespace WPFteste
             JanelaPrincipal.Show();
             this.Close();
         }
+
+        private void Click_Regras(object sender, RoutedEventArgs e)
+        {
+            if(RetanguloRegras.Visibility == Visibility.Hidden)
+            {
+                RetanguloRegras.Visibility = Visibility.Visible;
+                TituloAtributos.Visibility = Visibility.Visible;
+                TextoAtributos.Visibility = Visibility.Visible;
+                TituloComuns.Visibility = Visibility.Visible;
+                TextoComuns.Visibility = Visibility.Visible;
+                TituloOposto.Visibility = Visibility.Visible;
+                TextoOposto.Visibility = Visibility.Visible;
+                TituloPericia.Visibility = Visibility.Visible;
+                TextoPericias.Visibility = Visibility.Visible;
+                TextoRegras.Visibility = Visibility.Visible;
+                ListaRegras.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                RetanguloRegras.Visibility = Visibility.Hidden;
+                TituloAtributos.Visibility = Visibility.Hidden;
+                TextoAtributos.Visibility = Visibility.Hidden;
+                TituloComuns.Visibility = Visibility.Hidden;
+                TextoComuns.Visibility = Visibility.Hidden;
+                TituloOposto.Visibility = Visibility.Hidden;
+                TextoOposto.Visibility = Visibility.Hidden;
+                TituloPericia.Visibility = Visibility.Hidden;
+                TextoPericias.Visibility = Visibility.Hidden;
+                TextoRegras.Visibility = Visibility.Hidden;
+                ListaRegras.Visibility = Visibility.Hidden;
+            }
+        }
+
     }
 }
