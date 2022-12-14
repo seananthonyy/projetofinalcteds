@@ -58,8 +58,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Interfaces\IPersonagens.cs" />
     <Compile Include="Interfaces\IUsuarios.cs" />
+    <Compile Include="Models\Personagens.cs" />
     <Compile Include="Models\Usuarios.cs" />
+    <Compile Include="Repositories\PersonagensRepository.cs" />
     <Compile Include="Repositories\UsuariosRepository.cs" />
     <Compile Include="SignUpWindow.xaml.cs">
       <DependentUpon>SignUpWindow.xaml</DependentUpon>
