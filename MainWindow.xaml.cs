@@ -39,7 +39,7 @@ private void Button_Click_1(object sender, RoutedEventArgs e)
                 SqlCommand sqlCmd = new SqlCommand(pesquisa, conexaosql);
                 sqlCmd.CommandType = System.Data.CommandType.Text;
                 sqlCmd.Parameters.AddWithValue("@usuario", TextBox_Usuario.Text);
-                sqlCmd.Parameters.AddWithValue("@senha", TextBox_Senha.Text);
+                sqlCmd.Parameters.AddWithValue("@senha", PasswordboxSenha.Password);
 
                 int x = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 if (x == 1)
