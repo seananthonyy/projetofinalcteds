@@ -46,3 +46,9 @@ D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\MenuWindow
 D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\SignUpWindow.g.cs
 D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\MenuWindow.baml
 D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\SignUpWindow.baml
+D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\bin\Debug\XamlAnimatedGif.dll
+D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\bin\Debug\XamlAnimatedGif.pdb
+D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\FichaWindow.g.cs
+D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\MapWindow.g.cs
+D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\FichaWindow.baml
+D:\Facul\CursoCTEDS\ProjetoFinal\Programa\projetofinalcteds\obj\Debug\MapWindow.baml
