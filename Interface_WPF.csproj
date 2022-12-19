@@ -143,11 +143,15 @@
   <ItemGroup>
     <Resource Include="blackbackground.jpg" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Resource Include="mapa.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image4.png" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> 10c33c7c8c64554fd11cf37cc1dc00e3f5c9bdca
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
